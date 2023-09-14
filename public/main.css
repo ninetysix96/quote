@@ -1,0 +1,126 @@
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and style for the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the h1 element */
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the list of quotes */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style individual quote items */
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the quote text */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the hidden paragraph (if needed) */
+.hidden {
+    display: none;
+}
+/* Style the form container */
+.update {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style the quote container */
+.old-quote {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.old-quote p {
+    margin: 0;
+    padding: 10px;
+}
+
+.delete {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.new {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- your head content here -->
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1>Quotes</h1>
+    <ul>
+        <% findQuote.forEach(quote => { %>
+            <li>
+                <p>Nakyl: <%= quote.quote %></p>
+                <p>Awtor: <%= quote.autor %></p>
+                <p class="hidden" id="<%= quote._id %>"> </p>
+            </li>
+        <% }); %>
+    </ul>
+
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

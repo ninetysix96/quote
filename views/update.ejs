@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <% if (!locals.quote) { %>
+     
+        <div class="update">
+            <form method="post" action="/update">
+                <input type="text" name="quoteID" id="id" placeholder="Enter quote id" required>
+                <input type="submit" value="Submit" >
+            </form>
+
+        </div> 
+    <% } %>
+
+    <% if (locals.quote) { %>
+        <div class="update">
+            <div class="old-quote">
+                <p>Awtor: <%= quote.autor %></p>
+                <p>Nakyl: <%= quote.quote %></p>
+            </div>
+            <form method="post" action="/update/quote">
+                <input type="text" id="newQuote" name="newQuote" placeholder="Enter new quote" required>
+                <input type="text" id="newAuthor" name="newAuthor" placeholder="Enter new author" required>
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+
+    <% } %>
+
+    
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
